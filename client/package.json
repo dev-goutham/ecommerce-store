@@ -40,11 +40,12 @@
 		"start": "next start",
 		"type-check": "tsc --project tsconfig.json --pretty --noEmit",
 		"lint": "eslint --ignore-path .gitignore --ext js,jsx,ts,tsx --fix",
-		"test": "jest --watch"
+		"test:watch": "jest --watch",
+		"test": "jest"
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "lint-staged"
+			"pre-commit": "npm run test && lint-staged"
 		}
 	}
 }
