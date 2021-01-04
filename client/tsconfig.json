@@ -16,5 +16,6 @@
 		"baseUrl": "./src"
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules"],
+	"files": ["./src/twin.d.ts"]
 }
